@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middle Earth</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./js/main.js" type="module" defer></script>
+</head>
+<body>
+    <main class="game">
+        <h1 class="main-title">Битва за Cредиземие</h1>
+        <div class="game-controls">
+            <button id="battle">Раунд</button>
+        </div>
+        <div class="armies">
+            <div id="army1">
+                <h2>Армия Востока</h2>
+                    <div class="army-settings">
+                        <input type="text" id="limit1" value="10">
+                        <button id="generateRandom1">Создать</button>
+                    </div>
+                <div id="army1Display"></div>
+            </div>
+            <div id="battleLog">
+                <h2>Battle Log</h2>
+                <ul id="logList"></ul>
+            </div>
+            <div id="army2">
+                <h2>Войско Запада</h2>
+                    <div class="army-settings">
+                        <input type="text" id="limit2" value="10">
+                        <button id="generateRandom2">Создать</button>
+                    </div>
+                <div id="army2Display"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

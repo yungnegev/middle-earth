@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=MedievalSharp&display=swap');
+
+@font-face {
+    font-family: 'tolkien';
+    src: url('/src/assets/fonts/tolkien.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.game {
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.main-title {
+    font-family: 'tolkien', cursive;
+    font-size: 54px;
+    color: #FFD700;
+}
+
+.armies {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#army1,
+#army2 {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+}
+
+#army2 {
+    align-items: flex-end;
+}
+
+#army1 h2,
+#army2 h2 {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 24px;
+}
+
+#logList {
+    width: 600px;
+    height: 400px;
+    overflow: auto;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#limit1,
+#limit2 {
+    font-family: 'El Messiri', sans-serif;
+    outline: none;
+    background-color: inherit;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    width: 50px;
+    border-radius: 4px;
+    padding: 10px 5px;
+    margin-right: 10px;
+}
+
+#generateRandom1,
+#generateRandom2 {
+    font-family: 'El Messiri', sans-serif;
+    outline: none;
+    background-color: inherit;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    width: 150px;
+    border-radius: 4px;
+    padding: 10px 5px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+#generateRandom1:hover,
+#generateRandom2:hover {
+    border: 1px solid #9a9a9a;
+    background-color: #9a9a9a;
+    color: #121212;
+}
+
+.army-settings {
+    margin-bottom: 40px;
+}
+
+.unit {
+    font-family: 'El Messiri', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 340px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #2a2a2a;
+}
+
+.unit img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.unit__stats {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.unit__hp {
+    font-size: 24px;
+    color: #fff;
+    height: 70px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
