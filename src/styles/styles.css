@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=MedievalSharp&display=swap');
 
 @font-face {
     font-family: 'tolkien';
@@ -60,14 +60,14 @@ li {
 }
 
 #logList {
-    width: 600px;
-    height: 400px;
+    width: 660px;
+    height: 480px;
     overflow: auto;
-    border: 1px solid #fff;
     padding: 10px;
     border-radius: 1rem;
     display: flex;
     flex-direction: column-reverse;
+    gap: 10px;
 }
 
 #limit1,
@@ -107,8 +107,14 @@ li {
     color: #121212;
 }
 
+#battleLog h2 {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
 .army-settings {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .unit {
@@ -121,6 +127,18 @@ li {
     border-radius: 8px;
     overflow: hidden;
     background-color: #2a2a2a;
+}
+
+.unitqty {
+    font-size: 18px;
+    font-family: 'El Messiri', sans-serif;
+    display: flex;
+    padding-bottom: 12px;
+}
+
+.unitqty2 {
+    width: 100%;
+    justify-content: flex-end;
 }
 
 .unit img {
@@ -143,5 +161,93 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
+}
+
+#battle,
+#autoResolve,
+#reset {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+  
+#battle:hover {
+    background-color: #45a049; 
+}
+
+#autoResolve {
+    background-color: #ffa500;; 
+    margin-right: 10px; 
+    margin-left: 10px;
+}
+  
+#autoResolve:hover {
+    background-color: #ffa500;; 
+}
+  
+  /* Reset Button */
+#reset {
+    background-color: #3498db; /* Red */
+  }
+  
+#reset:hover {
+    background-color: #2980b9; /* Darker red on hover */
+}
+
+/* log */
+
+.log-item {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 18px;
+    padding: 0px 4px;
+    border-radius: 4px;
+    background-color: #2a2a2a;
+}
+
+.log-name {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.log-dodge {
+    color: #AEEEEE;
+    font-weight: 700;
+}
+
+.log-id {
+    color: gray;
+}
+
+.log-army {
+    font-size: 14px;
+    color: gray;
+}
+
+.log-defeated {
+    color: #ff4343;
+    font-weight: 700;
+}
+
+.log-damage {
+    color: #ff4343;
+    font-weight: 700;
+}
+
+.log-crit {
+    color: #ffa500;
+    font-weight: 700;
+}
+
+.log-charmed {
+    color: #ca7ad8;
+    font-weight: 700;
 }

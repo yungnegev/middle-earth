@@ -31,6 +31,55 @@ export const updateDivColorByHP = (div, hp) => {
       div.style.backgroundColor = '#ffe24f';
     }
     if(hp <= 25) {
-      div.style.backgroundColor = '#FFA3A3';
+      div.style.backgroundColor = '#ff4343';
     }
+}
+
+export const nameByEffect = (effect, name) => {
+  const names = {
+    1: 'Человек Воин',
+    2: 'Человек Всадник',
+    3: 'Эльф',
+    4: 'Орк Тяжеловес',
+    5: 'Орк Лазутчик',
+    6: 'Волшебник',
   }
+
+  if (effect === 'damage') {
+    switch (name) {
+      case names[1]:
+        return 'Человеку Воину';
+      case names[2]:
+        return 'Человеку Всаднику';
+      case names[3]:
+        return 'Эльфу';
+      case names[4]:
+        return 'Орку Тяжеловесу';
+      case names[5]:
+        return 'Орку Лазутчику';
+      case names[6]:
+        return 'Волшебнику';
+      default:
+        return '';
+    }
+  } else if (effect === 'charm') {
+    switch (name) {
+      case names[1]:
+        return 'Человека Воина';
+      case names[2]:
+        return 'Человека Всадника';
+      case names[3]:
+        return 'Эльфа';
+      case names[4]:
+        return 'Орка Тяжеловеса';
+      case names[5]:
+        return 'Орка Лазутчика';
+      case names[6]:
+        return 'Волшебника';
+      default:
+        return '';
+    }
+  } else {
+    return '';
+  }
+}
